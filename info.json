@@ -1,12 +1,12 @@
 {
     "name": "chens-modpack-auxiliary",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "title": "Chens Modpack(auxiliary)",
     "author": "JackieChen",
     "dependencies": [
-        "~ chens-tweak-mod",
         "Actual_Craft_Time_2",
         "AfraidOfTheDark",
+        "adaptive_movement_speed",
         "always-day",
         "aotixzhcn",
         "automatic-station-painter",
@@ -43,6 +43,7 @@
         "Milestones",
         "mining-patch-planner",
         "more-minimap-autohide-017",
+        "no-pipe-touching",
         "pickitup",
         "power-grid-comb",
         "productions-per-minute",
@@ -54,6 +55,7 @@
         "Repair_Turret",
         "remove-productivity-cap",
         "show-max-underground-distance",
+        "solar-calc",
         "sonaxaton-minimal-crafting-menu",
         "squeak-through-2",
         "start-alt",
@@ -64,6 +66,10 @@
         "vanilla-loaders-hd",
         "what-is-it-really-used-for",
         "Wr_Enhanced_Map_Colors",
+        "zzzzStopChasingBeltItems",
+
+        "~ chens-tweak-mod",
+
         "? factorissimo-2-notnotmelon",
         "? far-reach",
         "? rso-mod",

@@ -1,0 +1,17 @@
+{
+  "name": "chens-modpack-auxiliary",
+  "version": "0.4.0",
+  "scripts": {
+      "release": "standard-version",
+      "full-release": "git add . && git commit -m \"chore: release prep\" && npm run release && git push origin main --follow-tags && npx github-release-from-changelog"
+  },
+  "devDependencies": {
+      "github-release-from-changelog": "^2.1.1",
+      "standard-version": "^9.5.0"
+  },
+  "repository": {
+      "type": "git",
+      "url": "https://github.com/geekiechen/chens-modpack-auxiliary.git"
+  }
+}
+

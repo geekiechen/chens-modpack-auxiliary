@@ -110,10 +110,6 @@ function extractLatestChangelogBlockFromMd(filePath) {
         fs.writeFileSync(tempChangelogFile, latestChangelog, "utf-8");
 
         // 将 Git 操作和版本发布的部分移到最后
-        const version = JSON.parse(
-            fs.readFileSync("package.json", "utf8")
-        ).version;
-
         // 首先进行 Git 操作和版本更新，确保所有变更已提交
         execSync(`git add . && git commit -m "chore: release prep"`, {
             stdio: "inherit",
@@ -127,7 +123,7 @@ function extractLatestChangelogBlockFromMd(filePath) {
 
         // ✅ 创建 GitHub Release，并直接从临时文件读取 --notes
         execSync(
-            `gh release create v${version} --title "v${version}" --notes-file "${tempChangelogFile}"`,
+            `gh release create v${v} --title "v${v}" --notes-file "${tempChangelogFile}"`,
             {
                 stdio: "inherit",
             }

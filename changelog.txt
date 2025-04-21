@@ -1,25 +1,30 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.4.2
+Date: 2025-04-21
+  Changes:
+    - Updated version.
+---------------------------------------------------------------------------------------------------
 Version: 0.4.1
 Date: 2025-04-16
- Changes:
-  - Adjusted prerequisite mods.
+  Changes:
+    - Adjusted prerequisite mods.
 ---------------------------------------------------------------------------------------------------
 Version: 0.4.0
 Date: 2025-04-03
- Changes:
-  - Adjusted the prerequisite mods, requiring the FilterHelper mod.
+  Changes:
+    - Adjusted the prerequisite mods, requiring the FilterHelper mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.3.0
 Date: 2025-04-01
- Changes:
-  - Adjusted the prerequisite mods, the ChangeInserterDropLane mod is no longer needed.
+  Changes:
+    - Adjusted the prerequisite mods, the ChangeInserterDropLane mod is no longer needed.
 ---------------------------------------------------------------------------------------------------
 Version: 0.2.0
 Date: 2025-03-27
- Changes:
-  - Adjusted the prerequisite mods, requiring the ChangeInserterDropLane mod.
+  Changes:
+    - Adjusted the prerequisite mods, requiring the ChangeInserterDropLane mod.
 ---------------------------------------------------------------------------------------------------
 Version: 0.1.0
 Date: 2025-03-26
- Changes:
-  - Added a changelog.
+  Changes:
+    - Added a changelog.

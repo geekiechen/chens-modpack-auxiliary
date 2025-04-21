@@ -64,8 +64,8 @@ function extractLatestChangelogBlockFromMd(filePath) {
         fs.readFileSync("package.json", "utf8")
     ).name;
 
-    // 返回带有 # Changelog 和提取的版本块
-    return `# Changelog\n\n## [${version}] - ${date}\nChanges:\n${changelogText}\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n### [${version}](https://github.com/geekiechen/${projectName}/compare/v${version}...v${version}) (${date})`;
+    // 返回带有 # Changelog 和提取的版本块，注意不要重复添加 "Changes:"
+    return `# Changelog\n\n## [${version}] - ${date}\n${changelogText}\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n### [${version}](https://github.com/geekiechen/${projectName}/compare/v${version}...v${version}) (${date})`;
 }
 
 (async () => {

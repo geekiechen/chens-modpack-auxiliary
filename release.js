@@ -59,8 +59,13 @@ function extractLatestChangelogBlockFromMd(filePath) {
     const date = match[2]; // 提取日期
     const changelogText = match[3].trim(); // 提取变更内容
 
+    // 🔧 从 package.json 中获取项目名称
+    const projectName = JSON.parse(
+        fs.readFileSync("package.json", "utf8")
+    ).name;
+
     // 返回带有 # Changelog 和提取的版本块
-    return `# Changelog\n\n## [${version}] - ${date}\nChanges:\n${changelogText}\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n### [${version}](https://github.com/geekiechen/chens-tweak-mod/compare/v${version}...v${version}) (${date})`;
+    return `# Changelog\n\n## [${version}] - ${date}\nChanges:\n${changelogText}\n\nAll notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.\n\n### [${version}](https://github.com/geekiechen/${projectName}/compare/v${version}...v${version}) (${date})`;
 }
 
 (async () => {

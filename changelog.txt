@@ -1,4 +1,14 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2025-05-06
+  Changes:
+    - Added prerequisite mod: blueprint-sandboxes.
+    - Added prerequisite mod: StatsGui.
+    - Added prerequisite mod: pipe-visualization-overlay.
+    - Added prerequisite mod: afk_crafter.
+
+    - Removed prerequisite mod: FluidWagonColorMask.
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2025-04-25
   Changes:
